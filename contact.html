@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<title> تماس </title>
+	</head>
+	
+	<body>
+		<header>
+		<img class="logo" src="logo.png" width="120" height="120">
+		&nbsp &nbsp
+		 <h1>دانشگاه صنعتی شریف </h1>
+		</header>
+		<nav>
+			<ul>
+				<li> <a href="mainpage.html"> صفحه اصلی </a></li>
+				<li> <a href="abilities.html"> افتخارات و توانمندی‌ها</a> </li>			
+				<li> <a href="contact.html"> تماس </a></li>
+			</ul>
+		</nav> <br>
+		<form action=""method="">
+			<label for="name">نام: </label> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="text" id="name" name=""> <br>
+			<label for="family">نام خانوادگی: </label> &nbsp <input type="text" id="family" name=""> <br>
+			<label for="age">سن: </label> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp <input type="number" id="age" name="" min="2" max="120" > <br>
+			آقا &nbsp <input type="radio" name="mf" value="">&nbsp &nbsp &nbsp خانم &nbsp <input type="radio" name="mf" value=""><br>
+			وضعیت آکادمیک: &nbsp
+			<select>
+			<option value="master">استاد</option>
+			<option value="Hstudent">دانشجو</option>
+			<option value="Lstudent">دانش آموز</option>
+			<option value="graguated">فارغ التحصیل</option>
+			<option value="other">سایر</option>
+			</select><br>
+			<label for="email">آدرس پست الکترونیک: </label> &nbsp <input type="text" id="email" name=""> <br>
+			نظرات: <br> 
+			&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <textarea rows="10" cols="40"  ></textarea> <br>
+			&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  
+			&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  
+			&nbsp &nbsp &nbsp 
+			<button onclick="myFunction()">ثبت نظرات</button>
+			<p id="demo"></p>
+			<script>
+				function myFunction() {
+					var txt;
+					if (confirm("از ثبت نظر خود اطمینان دارید؟")) {
+						txt = "نظرتان با موفقیت ثبت شد";
+					} else {
+						txt = "نظرتان ثبت نشد";
+					}
+					alert(txt)
+				}
+			</script>
+		</form>
+	</body>
+	<footer>
+		<br>
+		<br>
+		<p>  ایمیل: <a href="mailto:ho3ein2532@gmail.com">ho3ein2532@gmail.com</a></p>
+		<p> <a href= "https://github.com/mgh2532"> my github </a> </p>
+		<p> <a href= "https://stackoverflow.com/users/17533879/mohammad"> my stackoverflow </a></p>
+	</footer>
+	
+</html>
